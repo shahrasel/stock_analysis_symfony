@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+{#<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail">Email</label>
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+    <label for="inputPassword">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" required>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+
+    #}{#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="_remember_me"> Remember me
+            </label>
+        </div>
+    #}{#
+
+    <button class="btn btn-lg btn-primary" type="submit">
+        Sign in
+    </button>
+</form>#}
+
+    <div class="row" align="center">
+        <div class="col-md-6 mx-auto p-0">
+            <div class="card">
+                <div class="login-box">
+                    <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                        <div class="login-space">
+                            <div class="login">
+                                {% if error %}
+                                    <div class="alert alert-danger" style="color: #ff0000">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                {% endif %}
+
+                                {% if app.user %}
+                                    <div class="mb-3">
+                                        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+                                    </div>
+                                {% endif %}
+                                <form action="" method="post">
+                                    <div class="group"> <label for="lemail" class="label">Email</label>
+                                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="input" placeholder="Enter your email address" required autofocus>
+                                    </div>
+                                    <div class="group"> <label for="lpass" class="label">Password</label>
+                                        {#<input id="lpass" name="lpass" type="password" class="input" data-type="password" placeholder="Enter your password">#}
+                                        <input type="password" name="password" id="inputPassword" class="input" placeholder="Enter your password" required>
+                                    </div>
+                                    <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                    <div class="hr"></div>
+                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                                    <input type="hidden" name="signin" value="1">
+                                </form>
+                            </div>
+
+                            <div class="sign-up-form">
+                                <form class="sign-up-form" action="" method="post">
+                                    <div class="group"> <label for="fname" class="label">First Name</label> <input id="fname" name="fname" type="text" class="input" placeholder="Enter your first name"> </div>
+
+                                    <div class="group"> <label for="fname" class="label">Last Name</label> <input id="lname" name="lname" type="text" class="input" placeholder="Enter your last name"> </div>
+
+                                    <div class="group"> <label for="email" class="label">Email Address</label> <input id="email" name="email" type="text" class="input" placeholder="Enter your email address"> <label id="email_error" style="display: none; color: #ff0000;font-weight: normal;font-size: 14px;">Email already exists. Try with different email address.</label></div>
+
+                                    <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" name="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+
+                                    <div class="group"> <label for="rpass" class="label">Repeat Password</label> <input id="rpass" name="rpass" type="password" class="input" data-type="password" placeholder="Repeat your password"><label id="rpass_error" style="display: none; color: #FF0000;font-weight: normal;font-size: 14px;">Repeat password should be matched with password field</label> </div>
+
+                                    <div class="group"> <input type="submit" class="button" value="Sign Up" onClick="return formvalidation()"> </div>
+                                    <div class="hr"></div>
+                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                                    <input type="hidden" name="signup" value="1">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -5,15 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
-            <link href="lay" rel="stylesheet" type="text/css" media="all">
-            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-            <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <link href="customer-review.css" rel="stylesheet" type="text/css" media="all">
+            <link rel="stylesheet" type="text/css" media="all" href="{{ asset('css/layout.css') }}">
+            <link href="{{ asset('css/customer-review.css') }}" rel="stylesheet" type="text/css" media="all">
+            <link rel="stylesheet" type="text/css" media="all" href="{{ asset('css/style.css') }}">
+            {#<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">#}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        {% endblock %}
     </body>
 </html>

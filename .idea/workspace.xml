@@ -2,97 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b193ed68-d0a7-48b4-a529-beb58f4d4d43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stock_analysis_symfony.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Pe-icon-7-stroke.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/avatars/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-inverse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/scripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/gallery/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/gallery/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/imgl.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/imgr.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/latest/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/latest/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide1-old.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide2-old.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide3-old.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/slides/slide3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/demo/vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/male-placeholder-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efc9db026eea_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efc9def17fa6_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efc9e0f35810_331494952.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efc9e462b8d2_150985775.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efca00a67268_Rplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efca01d2e7d7_Screenshot 2020-06-30 at 11.51.47 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efcb699bdf28_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/5efcb6ed832eb_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efc9db026eea_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efc9def17fa6_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efc9e0f35810_331494952.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efc9e462b8d2_150985775.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efca00a67268_Rplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efca01d2e7d7_Screenshot 2020-06-30 at 11.51.47 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efcb699bdf28_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/blogs/small/5efcb6ed832eb_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/gallery/5efc8a167f6fd_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/gallery/5efc8a1b28fcd_331494952.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/gallery/5efc8a20e4872_150985775.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/user/5efc846120b07_Rplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/user/5efcbebc91358_Rplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/media/user/5efcc0013a542_stock-market1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20200808143942.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Twig/CustomExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../symfony_new_blog/templates/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stock_analysis_symfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stock_analysis_symfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -104,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -159,6 +103,32 @@
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fmw0EjCgwhVDNt1bzTyJxfkDhA" />
@@ -179,6 +149,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -188,7 +159,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596836350669</updated>
-      <workItem from="1596836351861" duration="1664000" />
+      <workItem from="1596836351861" duration="2944000" />
+      <workItem from="1596896465132" duration="11309000" />
     </task>
     <servers />
   </component>
@@ -197,5 +169,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="390" y="165" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596915092510">
+      <screen x="26" y="23" width="1414" height="877" />
+    </state>
+    <state x="390" y="165" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/26.23.1414.877@26.23.1414.877" timestamp="1596915092510" />
+    <state x="526" y="340" width="1053" height="560" key="DiffContextDialog" timestamp="1596909419604">
+      <screen x="25" y="23" width="1415" height="877" />
+    </state>
+    <state x="526" y="340" width="1053" height="560" key="DiffContextDialog/25.23.1415.877@25.23.1415.877" timestamp="1596909419604" />
+    <state x="34" y="178" key="SettingsEditor" timestamp="1596840014810">
+      <screen x="25" y="23" width="1415" height="877" />
+    </state>
+    <state x="34" y="178" key="SettingsEditor/25.23.1415.877@25.23.1415.877" timestamp="1596840014810" />
   </component>
 </project>
