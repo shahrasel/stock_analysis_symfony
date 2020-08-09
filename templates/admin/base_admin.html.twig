@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Language" content="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+        <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+        <meta name="msapplication-tap-highlight" content="no">
+        {% block stylesheets %}
+            <style type="text/css">
+                @font-face {
+                    font-family: 'Pe-icon-7-stroke';
+                    src:    url({{asset('assets/fonts/Pe-icon-7-stroke.eot')}}) format('opentype'),
+                    url({{asset('assets/fonts/Pe-icon-7-stroke.woff')}}) format('woff'),
+                    url({{asset('assets/fonts/Pe-icon-7-stroke.ttf')}}) format('truetype');
+                }
+
+                @font-face {
+                    font-family: 'Font Awesome 5 Free';
+                    src:    url({{asset('assets/fonts/fa-solid-900.eot')}}) format('opentype'),
+                    url({{asset('assets/fonts/fa-solid-900.woff')}}) format('woff'),
+                    url({{asset('assets/fonts/fa-solid-900.woff2')}}) format('woff2'),
+                    url({{asset('assets/fonts/fa-solid-900.ttf')}}) format('truetype');
+                }
+            </style>
+            <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+
+                <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+                    {{ include('admin/_header.html.twig') }}
+
+                    <div class="ui-theme-settings">
+                        <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                            <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+                        </button>
+
+                    </div>
+                    <div class="app-main">
+                        {{ include('admin/_left_menu.html.twig') }}
+                    </div>
+                </div>
+
+        {% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="{{ asset('assets/scripts/main.js') }}"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        {% endblock %}
+    </body>
+</html>

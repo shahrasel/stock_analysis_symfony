@@ -105,4 +105,16 @@ class UserController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/admin/dashboard", name="admin_dashboard")
+     */
+    public function dashboard()
+    {
+
+
+        return $this->render('admin/user/dashboard.html.twig', [
+            'controller_name' => 'UserController',
+        ]);
+    }
+
 }

@@ -1,0 +1,129 @@
+{% extends 'admin/base_admin.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+
+{% block body %}
+    {{ parent() }}
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+            <div class="app-page-title">
+                <div class="page-title-wrapper">
+                    <div class="page-title-heading">
+                        <div class="page-title-icon">
+                            <i class="pe-7s-graph2 icon-gradient bg-mean-fruit">
+                            </i>
+                        </div>
+                        <div>Hi {#<?php echo $_SESSION['ses_userinfo']['first_name'] ?>#}
+                            <div class="page-title-subheading" >
+                                Your Balance is now: <span style="color: #FF0000">{#<?php echo number_format(show_balance()) ?>#} BDT</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="page-title-actions">
+                        <div style=" float: right">
+                            <a class="btn btn-success" href="show_company_lists">Show Company Info</a>
+                        </div>
+
+
+                    </div>    </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col"> <h3> Select The Stock : </h3> </div>
+                    <div class="col">
+                        <form action="" method="post">
+                            {#<select name="company_name" class="form-control" id="company_name">
+                                <?php if(!empty($companyLists)): ?>
+                                <?php foreach ($companyLists as $companyList): ?>
+                                <option value="<?php echo $companyList['Company Name'] ?>"><?php echo $companyList['Company Name'] ?></option>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+                            </select>#}
+                        </form>
+                    </div>
+                    <div class="col" style="text-align: center">
+                        <input class="btn btn-primary" type="submit" value="Get Stock Prediciton">
+                    </div>
+                </div>
+            </form>
+
+            <p class="w-100"></p>
+            <p class="w-100"></p>
+
+            <div class="form-row" id="showing_buy_div" style="display: block">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Decision By Stock Prediction App</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="" disabled value="Buy" style="background-color: #C6ECB9" readonly>
+                </div>
+
+                <div class="form-group col-md-12" style="text-align: center">
+                    <input class="btn btn-success btn-lg" type="button" value="BUY THIS STOCK" id="show_buy_btn">
+                </div>
+            </div>
+
+            <div class="form-row" id="showing_sell_div" style="display: none">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Decision By Stock Prediction App</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="" disabled value="Sell" style="background-color: #f9bdbb" readonly>
+                </div>
+
+                <div class="form-group col-md-12" style="text-align: center">
+                    <input class="btn btn-success btn-lg" type="button" value="SEE VALUE OF YOUR STOCK" id="show_value_stock_btn">
+                </div>
+
+                <div class="form-group col-md-12" style="text-align: center;font-size: 30px;padding-top: 10px;" id="show_stock_price">
+
+                </div>
+
+                <div class="form-group col-md-12" id="show_sell_btn_div" style="text-align: center;display: none">
+                    <input class="btn btn-danger btn-lg" type="button" value="SELL THIS STOCK" id="show_sell_btn">
+                </div>
+            </div>
+
+
+            <form action="" style="display: none" id="show_buy_div" method="post">
+                <div class="form-row">
+                    <div class="col-md-6 mb-12">
+                        <label for="validationDefault01">Unit Price</label>
+                        <input type="text" class="form-control" id="unit_price" name="unit_price" placeholder="Unit Price" value="" required readonly>
+                    </div>
+                    <div class="col-md-6 mb-12">
+                        <label for="validationDefault02">Quantity</label>
+                        <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Quantity" value="" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-12 mb-12">
+                        <label for="validationDefault01">Total Price</label>
+                        <input type="text" class="form-control" id="total_price" name="total_price" placeholder="Total Price" value="" required readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-12 mb-12" style="text-align: center;padding-top: 20px;">
+                        <input type="hidden" name="activity" value="buy">
+                        <input type="hidden" name="b_stock_name" id="b_stock_name" value="">
+                        <input type="hidden" name="b_prediction_decision" id="b_prediction_decision" value="buy">
+                        <input type="button" class="btn btn-success btn-lg" value="CONFIRM BUY" id="buy_submit_btn">
+                    </div>
+                </div>
+            </form>
+
+
+
+
+        </div>
+        <div class="app-wrapper-footer">
+            <div class="app-footer">
+                <div class="app-footer__inner">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
